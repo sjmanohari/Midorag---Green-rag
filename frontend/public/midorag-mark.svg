@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="midoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#228B53" />
+      <stop offset="60%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+    <linearGradient id="sakuraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4A7B9" />
+      <stop offset="100%" stop-color="#E87A90" />
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ECFDF5" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FAF8F5" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Soft center glow -->
+  <circle cx="60" cy="60" r="48" fill="url(#centerGlow)" />
+
+  <!-- Outer precision geometric ring (thin tech lines) -->
+  <circle cx="60" cy="60" r="54" stroke="#228B53" stroke-opacity="0.18" stroke-width="1.2" stroke-dasharray="3 4"/>
+  <circle cx="60" cy="60" r="46" stroke="#121614" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- Botanical Leaf-Circuits Interlocking Arch -->
+  <path d="M 60 16 C 84 16, 104 36, 104 60 C 104 74, 96 86, 84 94" 
+        stroke="url(#midoGrad)" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M 60 104 C 36 104, 16 84, 16 60 C 16 46, 24 34, 36 26" 
+        stroke="url(#midoGrad)" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Technical Node Dots & Grid -->
+  <circle cx="60" cy="16" r="3.5" fill="#228B53" />
+  <circle cx="104" cy="60" r="3.5" fill="#10B981" />
+  <circle cx="60" cy="104" r="3.5" fill="#228B53" />
+  <circle cx="16" cy="60" r="3.5" fill="#10B981" />
+
+  <!-- Eco Leaf / Bio-loop in Center -->
+  <path d="M60 30 C76 42 76 68 60 82 C44 68 44 42 60 30 Z" 
+        fill="none" stroke="url(#midoGrad)" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="60" y1="36" x2="60" y2="76" stroke="#228B53" stroke-width="1.8" stroke-dasharray="2 3"/>
+
+  <!-- Sakura Petal Accent -->
+  <path d="M72 44 C82 40, 88 48, 80 56 C74 54, 70 50, 72 44 Z" 
+        fill="url(#sakuraGrad)" opacity="0.9"/>
+  <path d="M40 70 C32 64, 36 56, 44 58 C46 64, 44 68, 40 70 Z" 
+        fill="url(#sakuraGrad)" opacity="0.75"/>
+
+  <!-- Micro Technical Crosshairs -->
+  <line x1="56" y1="60" x2="64" y2="60" stroke="#121614" stroke-width="1.2"/>
+  <line x1="60" y1="56" x2="60" y2="64" stroke="#121614" stroke-width="1.2"/>
+</svg>
