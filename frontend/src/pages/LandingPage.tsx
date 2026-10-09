@@ -20,13 +20,15 @@ interface LandingPageProps {
 
 export const LandingPage: React.FC<LandingPageProps> = ({ onExplore, onRunDemo }) => {
   return (
-    <div className="relative min-h-[calc(100vh-5rem)] flex flex-col justify-between overflow-hidden">
+    <div className="relative min-h-[calc(100vh-5rem)] flex flex-col justify-between">
       {/* ========================================================
           HERO SECTION — Matching Primary Reference Composition (Section 7)
           Large branding, generous whitespace, botanical framing,
           technical typography and nature-tech harmony
           ======================================================== */}
-      <section className="relative pt-12 md:pt-20 pb-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto w-full text-center z-20">
+      <section className="relative pt-4 md:pt-6 pb-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto w-full text-left z-20">
+               
+
         {/* Subtle top indicator */}
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 border border-midora-border shadow-soft text-xs font-mono text-midora-muted mb-8 animate-fade-in backdrop-blur-sm">
           <span className="w-2 h-2 rounded-full bg-midora-green animate-pulse" />
@@ -36,9 +38,15 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onExplore, onRunDemo }
         </div>
 
         {/* Hero Branding — Centered Grand Logo */}
-        <div className="flex flex-col items-center justify-center mb-6">
-          <MidoragLogo size="hero" showTagline={false} className="justify-center" />
-        </div>
+        <div className="relative z-20 flex items-center gap-3 mb-6 text-left">
+  <MidoragLogo size="lg" showTagline={false} />
+  <img
+src="/images/midorag-co2.png"
+alt="MIDORAG"
+className="w-64 sm:w-80 md:w-[28rem] h-auto object-contain"
+/>
+
+</div>
 
         {/* Primary Subtitle & Technical Specification */}
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-display font-bold text-midora-dark tracking-tight max-w-3xl mx-auto mt-2 leading-tight">
